@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SP - Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="background-video">
+        <video id="bg-video" autoplay muted loop>
+            <source id="bg-source" src="default.mp4" type="video/mp4" />
+            <!-- Your browser does not support the video tag. -->
+        </video>
+    </div>
+
+    <!-- City Search -->
+    <div class="search">
+        <div class="city__search">
+            <div class="iconss">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input type="text" placeholder="Enter city name..." class="search__input">
+        </div>
+    </div>
+
+    <section class="weather__container">
+        <!-- Weather Information -->
+        <div class="weather__information">
+            <div>
+
+                <h2 class="place__name">
+                    <i class="fa-solid fa-location-dot"></i>
+                    City, Country
+                </h2>
+
+                <p class="currentTime">
+                    Day, Month Date, Year at HH:MM AM
+                </p>
+            </div>
+
+            <div class="weather__details">
+                <div class="weather__icon"></div>
+                <p class="weather__button">Sunny</p>
+                <p class="weather__degree"> 25°C</p>
+                <div class="degree__minmax">
+                    <p class="min">Min: --°C</p>
+                    <p class="max">Max: --°C</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Weather Details -->
+        <div class="weather__bars">
+            <p class="FeelLike__bar"><i class="fa-solid fa-temperature-half"></i> Feels Like <br> <span>--°C</span></p>
+            <p class="Humidity__bar"><i class="fa-solid fa-droplet"></i> Humidity: <br> <span>--%</span></p>
+            <p class="Wind__bar"><i class="fa-solid fa-wind"></i> Wind: <br> <span>--m/s</span></p>
+            <p class="Pressure__bar"><i class="fa-solid fa-arrow-down-wide-short"></i> Pressure: <br> <span>--
+                    hPa</span>
+            </p>
+            <p class="Visibility__bar"><i class="fa-solid fa-eye"></i> Visibility: <br> <span>-- mi</span></p>
+            <p class="SeaLevel__bar"><i class="fa-solid fa-water"></i> Sea Level: <br> <span>--</span></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
